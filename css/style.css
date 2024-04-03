@@ -18,6 +18,26 @@ body {
     justify-content: center;
 }
 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+#logo{
+    margin-right: auto;
+}
+
+nav a {
+    padding: 2rem;
+}
+
+nav a:hover{
+    border-top: 3px solid skyblue;
+    color: skyblue;
+}
+
 .main-container {
     width: 100%;
     max-width: 1440px;
