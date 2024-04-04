@@ -16,26 +16,140 @@
 body {
     display: flex;
     justify-content: center;
+    padding: 2px;
+    margin-top: 11px;
 }
+
+/* Agencement barre de navigation */
 
 nav{
     display: flex;
     align-items: center;
     justify-content: flex-end;
     flex-wrap: wrap;
+    margin-top: 16px;
 }
+
+/* Taille et placement du Logo en haut de page */
 
 #logo{
     margin-right: auto;
+    max-width: 100px;
+    max-height: 100px;
 }
+
+/* Espacement entre les liens de navigation */
 
 nav a {
     padding: 2rem;
 }
 
+/* Changement de couleur et bordure au dessus du lien lors du survolement avec le curseur */
+
 nav a:hover{
     border-top: 3px solid skyblue;
     color: skyblue;
+}
+
+/* Agencement de la barre de recherche */
+
+.search-form{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+/* Agencement et apparence de l'icone map */
+
+.search-form i{
+    padding: 1rem;
+    background-color: lightgray;
+    border-radius: 20% 0% 0% 20%;
+}
+
+/* Sizing de la barre de recherche et ajout d'une bordure */
+
+.search-form input{
+    padding-right: 2rem;
+    border: 1px solid lightgray;
+}
+
+/* Changement d'apparence du placeholder */
+
+.search-form input::placeholder{
+    font-weight: bold;
+    color: black;
+}
+
+/* Sizing et apparence du bouton "Rechercher" */
+
+.search-form button{
+    border: 1px solid #0065FC;
+    background-color: #0065FC;
+    color: white;
+    border-radius:0 1rem 1rem 0;
+    padding: 0 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Placement du div "Filtre" contenant les boutons de filtres et le texte "Filtres" */
+
+.filtres{
+    margin-bottom: 2rem;
+}
+
+/* Apparence et placement du texte "Filtres" */
+
+.filtres span{
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+/* Apparence et sizing des boutons de filtre */
+
+.filtres button{
+    padding: 0.7rem;
+    background-color: white;
+    border: 2px solid lightgray;
+    border-radius: 1.5rem;
+    font-weight: bold;
+}
+
+/* Changement de couleur des boutons de filtres au survolement du curseur */
+
+.filtres button:hover{
+    background-color: #DEEBFF;
+}
+
+/* Placemement des boutons de filtres */
+
+.filtres i{
+    margin-left: 0.2rem;
+    margin-right: 0.5rem;
+}
+
+/* Placement de la div info contenant l'icône "i" et le texte "logements disponibles" */
+
+.info{
+    margin-bottom: 1.5rem;
+}
+
+/* Création de la bordure ronde autour de l'icône "i" */
+
+.info i{ 
+    border: 1px solid lightgray;
+    border-radius: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+/* Placement du texte "Filtres" */
+
+.info span{
+    margin-left: 0.5rem;
 }
 
 .main-container {
@@ -43,6 +157,13 @@ nav a:hover{
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+}
+
+/* Placement et sizing du texte "Hébergements à Marseille */
+
+.hebergements span{
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 a {
