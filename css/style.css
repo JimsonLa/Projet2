@@ -53,36 +53,47 @@ nav a:hover{
 
 /* Agencement de la barre de recherche */
 
-.search-form{
+.search .search-form{
     display: flex;
     margin-bottom: 40px;
 }
 
 /* Agencement et apparence de l'icone map */
 
-.search-form i{
+.search .search-form i{
     padding: 1rem;
     background-color: lightgray;
     border-radius: 20% 0% 0% 20%;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* Changement opacity surevolement map icon */
+
+.search .search-form i:hover{
+    opacity: 1;
 }
 
 /* Sizing de la barre de recherche et ajout d'une bordure */
 
-.search-form input{
+.search .search-form input{
     padding-right: 2rem;
-    border: 1px solid lightgray;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
 }
 
 /* Changement d'apparence du placeholder */
 
-.search-form input::placeholder{
+.search .search-form input::placeholder{
     font-weight: bold;
     color: black;
 }
 
 /* Sizing et apparence du bouton "Rechercher" */
 
-.search-form button{
+.search .search-form button{
     border: 1px solid #0065FC;
     background-color: #0065FC;
     color: white;
@@ -90,6 +101,14 @@ nav a:hover{
     padding: 0 1.5rem;
     font-size: 1.2rem;
     font-weight: bold;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+/* Changement opacity à 1 lors du survolement du bouton "Rechercher */
+
+.search .search-form button:hover{
+    opacity: 1;
 }
 
 /* Placement du div "Filtre" contenant les boutons de filtres et le texte "Filtres" */
@@ -164,6 +183,80 @@ nav a:hover{
 .hebergements span{
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+/* Agencement des cartes */
+
+.cartes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Cartes hébergements */
+
+.carte{
+    background-color: white;
+    width: 14rem;
+    height: 10rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+/* Apparence et agencement image carte */
+
+.carte img{
+    height: 7rem;
+    max-width: 95%;
+    min-width: 95%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0rem 0rem;
+    margin-top: 0.4rem;
+}
+
+/* Apparence et agencement titre de la carte */
+
+.carte .titrecarte h3{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: start;
+    margin-left: 1rem;
+}
+
+/* Apparence et agencement sous titre de la carte */
+
+.carte .soustitrecarte{
+    text-align: start;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    margin-top: -0.7rem;
+}
+
+.soustitreeuro {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Étoiles hébergements */
+
+.cartes .carte .card-rating {
+    text-align: start;
+    margin-top: -0.7rem;
+    margin-left: 1rem;
+}
+
+/* Apparence et agencement du texte "Afficher plus" */
+
+.afficherplus{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.afficherplusdiv{
+    margin-top: 2rem;
 }
 
 a {
