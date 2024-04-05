@@ -11,6 +11,7 @@
 
 .fa-solid {
     color: var(--main-color);
+    --main-color: #0065FC;
 }
 
 body {
