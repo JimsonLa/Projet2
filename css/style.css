@@ -49,7 +49,7 @@ nav a {
 
 nav a:hover{
     border-top: 3px solid skyblue;
-    color: skyblue;
+    color: #0065FC;
 }
 
 /* Agencement de la barre de recherche */
@@ -202,6 +202,7 @@ nav a:hover{
     height: 10rem;
     border-radius: 1rem;
     margin-top: 2rem;
+    margin-right: 0.2rem;
     text-align: center;
     padding-bottom: 3rem;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -370,7 +371,8 @@ a {
 /* Placement et agencement de la div cartesactivites */
 
 .cartesactivites{
-    margin-left: 2rem;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: space-between;
     margin-bottom: 3rem;
@@ -414,7 +416,24 @@ a {
     margin-right: 1rem;
 } 
 
+/* Footer */
 
+footer{
+    background-color: #F2F2F2;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > *{
+    flex-basis: 20%;
+    margin-left: 1rem;
+}
+
+footer p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
