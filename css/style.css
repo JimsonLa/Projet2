@@ -1,4 +1,5 @@
 /****** General ***********/
+
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -198,8 +199,8 @@ nav a:hover{
 
 .carte{
     background-color: white;
-    width: 13rem;
-    height: 9rem;
+    width: 200px;
+    height: 150px;
     border-radius: 1rem;
     margin-top: 2rem;
     margin-right: 0.4rem;
@@ -208,6 +209,7 @@ nav a:hover{
     text-align: center;
     padding-bottom: 4rem;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    flex-wrap: wrap;
 } 
 
 /* Apparence et agencement image carte */
@@ -296,12 +298,6 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
-}
-
-/* Section hébergements sizing */
-
-.hebergements{
-    
 }
 
 /****** Hebergements And Populaires ***********/
@@ -447,6 +443,23 @@ footer p:hover{
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    .carte{
+        background-color: white;
+        width: 250px;
+        height: 9rem;
+        border-radius: 1rem;
+        margin-top: 2rem;
+        margin-right: 0.4rem;
+        text-align: center;
+        padding-bottom: 4rem;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    } 
+
+    .carte img{
+        width: 20px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -476,6 +489,47 @@ footer p:hover{
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    /* Placement et agencement de l'image de la carte */
+
+    .carteactivite img{
+        height: 7rem;
+        max-width: 100%;
+        min-width: 100%;
+        max-height: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0rem 0rem;
+    }
+
+    /* Placement du titre de la carte du parc national de Calanques */
+
+    .titrecartecalanques h3{
+        font-size: 0.9rem;
+        font-weight: bold;
+        text-align: start;
+        margin-left: 1rem;
+        margin-top: 0.2rem;
+        flex-wrap: wrap;
+    }
+
+    /* Cartes activités */
+
+    .carteactivite{
+        background-color: white;
+        width: 200px;
+        height: 250px;
+        border-radius: 1rem;
+        margin-top: 2rem;
+        text-align: center;
+        padding-bottom: 3rem;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+        margin-right: 1rem;
+    } 
+
+    .cartesactivites{
+        flex-wrap: wrap;
     }
 }
 
