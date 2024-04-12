@@ -48,7 +48,7 @@ nav a {
 /* Changement de couleur et bordure au dessus du lien lors du survolement avec le curseur */
 
 nav a:hover{
-    border-top: 3px solid skyblue;
+    border-top: 3px solid #0065FC;
     color: #0065FC;
 }
 
@@ -476,6 +476,15 @@ footer p:hover{
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .carte{
+        background-color: red;
+    }
+
+    .cartes{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
