@@ -488,6 +488,10 @@ footer p:hover{
     cursor: pointer;
 }
 
+.fa-sharp.fa-solid.fa-magnifying-glass{
+    display: none;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -588,6 +592,10 @@ footer p:hover{
     }
 }
 
+.fa-sharp.fa-solid.fa-magnifying-glass{
+    display: none;
+}
+
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
@@ -648,11 +656,13 @@ footer p:hover{
     
     nav .sub-nav{
         width: 100%;
+        display: flex;
     }
 
     nav .sub-nav a{
         width: 100%;
         text-align: center;
+        border-bottom: 3px solid lightgray;
     }
 
     /* Espacement entre les liens de navigation */
@@ -669,4 +679,56 @@ footer p:hover{
         border-top: 0px;
         color: #0065FC;
     }
+
+    #h2header{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    #pheader{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .search .search-form{
+        display: flex;
+        margin-bottom: 40px;
+        margin-left: 3%;
+    }
+    
+    /* Agencement et apparence de l'icone map */
+    
+    .search .search-form button{
+        border: 1px solid #0065FC;
+        background-color: #0065FC;
+        color: white;
+        border-radius:1rem 1rem 1rem 1rem;
+        padding: 0 0;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        opacity: 0.9;
+        margin-left: -5%;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.4));
+    }
+    
+    /* Changement opacity à 1 lors du survolement du bouton "Rechercher */
+    
+    .search .search-form button:hover{
+        opacity: 1;
+    }
+
+    #spanrechercher{
+        display: none;
+    }
+    
+    .search form i{
+        color: white;
+    }
+
+    .fa-sharp.fa-solid.fa-magnifying-glass{
+        background-color: transparent;
+        display: flex;
+    }
+
 }
