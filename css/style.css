@@ -300,9 +300,6 @@ a {
 
 /* Section hébergements sizing */
 
-.hebergements{
-    
-}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -314,13 +311,61 @@ a {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
+    margin-top: 30px;
     box-sizing: border-box;
 }
 
+
 /****** Hebergements ***********/
-.hebergements {
+#hebergements {
     width: 65%;
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
 }
+.hebergements-cartes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hebergements-cartes a{
+    width: 30%;
+    min-width: 120px;
+    background-color: #ffffff;
+    padding: 5px;
+    margin-top: 33px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #dadada;
+}
+.hebergements-cartes img{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    border: 5px;
+}
+.titrecarte h3{
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+.soustitrecarte{
+    margin: 0;
+}
+.card-rating{
+    margin-bottom: 5px;
+}
+.contenu-carte{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+    gap: 8px;
+}
+.afficher-plus{
+    font-size: 17px;
+    margin-top: 33px;
+}
+
 
 /****** Populaires ***********/
 .populaires {
@@ -451,10 +496,11 @@ footer p:hover{
         flex-direction: column;
     }
 
-    .hebergements {
+   
+    #hebergements {
         width: 100%;
     }
-
+    
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -490,5 +536,36 @@ footer p:hover{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    .main-container {
+        padding: 0;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: unset;
+        margin-top: 15px;
+    }
+
+    #hebergements{
+        background-color: #ffffff;
+        width: 100%;
+        padding-bottom: 0px; 
+    }
+
+    .hebergements-cartes{
+        flex-direction: column;
+    }
+    .hebergements-cartes a {
+        width: 100%;
+        margin-top: 15px;
+    }
+
 }
