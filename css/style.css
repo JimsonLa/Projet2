@@ -622,4 +622,51 @@ footer p:hover{
         margin-top: 15px;
     }
 
+
+    /* Taille et placement du Logo en haut de page */
+
+    #logo{
+        margin: auto;
+        max-width: 100px;
+        max-height: 100px;
+        display: flex;
+        margin-bottom: 2rem;
+    }
+
+    /* Agencement barre de navigation */
+
+    nav{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    
+    nav .sub-nav{
+        width: 100%;
+    }
+
+    nav .sub-nav a{
+        width: 50%;
+        width: 0%;
+    }
+
+    /* Espacement entre les liens de navigation */
+
+    nav a {
+        padding-right: 2rem;
+        padding-bottom: 10px;
+    }
+
+    /* Changement de couleur et bordure au dessus du lien lors du survolement avec le curseur */
+
+    nav a:hover{
+        border-bottom: 3px solid #0065FC;
+        border-top: 0px;
+        color: #0065FC;
+    }
 }
