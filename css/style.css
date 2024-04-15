@@ -651,8 +651,8 @@ footer p:hover{
     }
 
     nav .sub-nav a{
-        width: 50%;
-        width: 0%;
+        width: 100%;
+        text-align: center;
     }
 
     /* Espacement entre les liens de navigation */
