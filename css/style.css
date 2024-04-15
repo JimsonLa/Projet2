@@ -134,6 +134,7 @@ nav a:hover{
     border: 2px solid lightgray;
     border-radius: 1.5rem;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /* Changement de couleur des boutons de filtres au survolement du curseur */
@@ -530,6 +531,59 @@ footer p:hover{
 
     .cartes{
         display: flex;
+        flex-wrap: wrap;
+    }
+
+    .filtres{
+        display: flex;
+        width: 1000px;
+    }
+
+    .filtres button{
+        display: flex;
+        margin-top: 3rem;
+        margin-right: 6rem;
+        margin-left: -4rem;
+        background-color: white;
+        border: 2px solid lightgray;
+        border-radius: 1.5rem;
+        font-weight: bold;
+        width: 140px;
+        height: 50px;
+        padding-top: 0.8rem;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .filtres i{
+        margin-left: 0.2rem;
+        margin-right: 0.5rem;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+
+    .cartesactivites{
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .carteactivite{
+        width: 170px;
+        height: 200px;
+    }
+
+    .carteactivite .titrecarte h3{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carteactivite .grandtitrecarte h3{
+        font-size: 0.9rem;
+        font-weight: bold;
+        text-align: start;
+        margin-left: 1rem;
+        margin-top: 0.3rem;
         flex-wrap: wrap;
     }
 }
