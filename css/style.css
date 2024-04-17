@@ -497,6 +497,16 @@ footer p:hover{
     display: none;
 }
 
+
+.carteactivite .grandtitrecarte h3{
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: start;
+    margin-left: 1rem;
+    margin-top: 0.6rem;
+    flex-wrap: wrap;
+}
+    
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
