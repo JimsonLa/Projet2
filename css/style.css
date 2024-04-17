@@ -167,6 +167,11 @@ nav a:hover{
     padding-right: 0.8rem;
 }
 
+.divinfotexte{
+    margin-left: 3%;
+    margin-top: -2%;
+}
+
 /* Placement du texte "Filtres" */
 
 .info span{
@@ -809,4 +814,23 @@ footer p:hover{
         grid-column: 2/3;
         grid-row: 2/4;
     }
+
+    .info{
+        display: block;
+        flex-wrap: wrap;
+        margin-left: 3%;
+    }
+
+    .info span{
+        display: block;
+        width: 400px;
+        flex-wrap: wrap;
+        margin-left: 40px;
+        margin-top: -35px;
+
+    }
+    .cartesactivites{
+        display: none;
+    }
+
 }
