@@ -833,4 +833,7 @@ footer p:hover{
         display: none;
     }
 
+    .populaires-cards{
+        display: block;
+    }
 }
