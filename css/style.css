@@ -829,11 +829,33 @@ footer p:hover{
         margin-top: -35px;
 
     }
-    .cartesactivites{
-        display: none;
-    }
 
     .populaires-cards{
         display: block;
+    }
+
+    #hebergements span{
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+
+    .cartesactivites{
+        display: block;
+    }
+
+    .carteactivite{
+        margin: auto;
+        margin-top: 3%;
+        width: 400px;
+        height: 200px;
+    }
+
+    .carteactivite .grandtitrecarte h3{
+        font-size: 0.9rem;
+        font-weight: bold;
+        text-align: start;
+        margin-left: 1rem;
+        margin-top: 0.6rem;
+        flex-wrap: wrap;
     }
 }
