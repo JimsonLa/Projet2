@@ -858,4 +858,14 @@ footer p:hover{
         margin-top: 0.6rem;
         flex-wrap: wrap;
     }
+
+    footer{
+        display: block;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    footer div{
+        margin-left: 8%;
+    }
 }
