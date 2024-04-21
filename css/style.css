@@ -11,7 +11,10 @@
 
 .fa-solid {
     color: var(--main-color);
-    --main-color: #0065FC;
+}
+
+.fa-location-dot{
+    color: #070707;
 }
 
 body {
@@ -516,7 +519,10 @@ footer p:hover{
         flex-direction: column;
     }
 
-   
+    .fa-location-dot{
+        color: #070707;
+    }
+
     #hebergements {
         width: 100%;
     }
@@ -605,6 +611,13 @@ footer p:hover{
         margin-top: 0.3rem;
         flex-wrap: wrap;
     }
+
+    #hebergements span{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    
 }
 
 .fa-sharp.fa-solid.fa-magnifying-glass{
@@ -669,6 +682,17 @@ footer p:hover{
         width: 100%;
     }
     
+    .populaires{
+        height: 9.5%;
+        margin-right: 30rem;
+        margin-left: -3%;
+        width: 106%;
+    }
+
+    .fa-location-dot{
+        color: #070707;
+    }
+
     nav .sub-nav{
         width: 100%;
         display: flex;
@@ -736,8 +760,8 @@ footer p:hover{
     #spanrechercher{
         display: none;
     }
-    
-    .search form i{
+
+    .fa-magnifying-glass{
         color: white;
     }
 
@@ -873,6 +897,12 @@ footer p:hover{
         display: block;
         padding-top: 1%;
         padding-bottom: 1%;
+        background-color: var(--main-bg-color);
+        width: 106%;
+        margin-right: 30rem;
+        margin-left: -3%;
+        margin-bottom: auto;
+        height: 9.5%;
     }
 
     footer div{
