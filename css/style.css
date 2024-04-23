@@ -284,6 +284,8 @@ a {
     font-size: 22px;
 }
 
+/* Apparence carte populaires*/
+
 .card {
     background-color: white;
     border-radius: 20px;
@@ -376,7 +378,7 @@ a {
 }
 
 
-/****** Populaires ***********/
+/****** Section populaires agencemennt ***********/
 .populaires {
     width: 32%;
 }
@@ -519,9 +521,12 @@ footer p:hover{
         flex-direction: column;
     }
 
+    /* Changement couleur logo "Location Dot" */
     .fa-location-dot{
         color: #070707;
     }
+
+    /* Sizing sections */
 
     #hebergements {
         width: 100%;
@@ -531,6 +536,8 @@ footer p:hover{
         width: 100%;
         margin-top: 50px;
     }
+
+    /* Agencement des cartes */
 
     .populaires-cards {
         display: flex;
@@ -558,6 +565,8 @@ footer p:hover{
         display: flex;
         flex-wrap: wrap;
     }
+
+    /* Agencement et apparence des filtres */
 
     .filtres{
         display: flex;
@@ -588,6 +597,8 @@ footer p:hover{
         margin-top: auto;
     }
 
+    /* Agencement et apparence des cartes Activités */
+
     .cartesactivites{
         max-width: 100%;
         justify-content: center;
@@ -612,6 +623,8 @@ footer p:hover{
         flex-wrap: wrap;
     }
 
+    /* Apparence texte "Hébergements à Marseille */
+
     #hebergements span{
         font-size: 1.5rem;
         font-weight: bold;
@@ -626,6 +639,8 @@ footer p:hover{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+    /* Agencement des sections */
 
     .main-container {
         padding: 0;
@@ -649,6 +664,8 @@ footer p:hover{
         width: 100%;
         padding-bottom: 0px; 
     }
+
+    /* Agencement des cartes hébergements */
 
     .hebergements-cartes{
         flex-direction: column;
@@ -682,6 +699,8 @@ footer p:hover{
         width: 100%;
     }
     
+    /* Agencement section populaires */
+
     .populaires{
         height: 9.5%;
         margin-right: 30rem;
@@ -689,9 +708,13 @@ footer p:hover{
         width: 106%;
     }
 
+    /* Apparence logo "Location Dot" */
+
     .fa-location-dot{
         color: #070707;
     }
+
+    /* Agencement barre de navigation */
 
     nav .sub-nav{
         width: 100%;
@@ -719,6 +742,8 @@ footer p:hover{
         color: #0065FC;
     }
 
+    /* Agencement du P et du H2 sous le logo Booki */
+
     #h2header{
         margin-left: 3%;
         margin-right: 3%;
@@ -727,12 +752,6 @@ footer p:hover{
     #pheader{
         margin-left: 3%;
         margin-right: 3%;
-    }
-
-    .search .search-form{
-        display: flex;
-        margin-bottom: 40px;
-        margin-left: 3%;
     }
     
     /* Agencement et apparence de l'icone map */
@@ -757,9 +776,13 @@ footer p:hover{
         opacity: 1;
     }
 
+    /* Retirer le bouton rechercher de la version Desktop */
+
     #spanrechercher{
         display: none;
     }
+
+    /* Apparence du logo rechercher */
 
     .fa-magnifying-glass{
         color: white;
@@ -768,6 +791,14 @@ footer p:hover{
     .fa-sharp.fa-solid.fa-magnifying-glass{
         background-color: transparent;
         display: flex;
+    }
+
+    /* Agencement de la barre de recherche */
+
+    .search .search-form{
+        display: flex;
+        margin-bottom: 40px;
+        margin-left: 3%;
     }
 
     .search{
@@ -801,6 +832,8 @@ footer p:hover{
         padding-left: 0%;
     }
  
+    /* Agencement et apparence du texte "Filtres" */
+
     .filtres span{
         font-size: 1rem;
         font-weight: bold;
@@ -809,6 +842,8 @@ footer p:hover{
         grid-column: 1/2;
         grid-row: 1/2;
     }
+
+    /* Agencement des boutons filtres */
 
     .filtres{
         display: grid;
@@ -849,6 +884,8 @@ footer p:hover{
         grid-row: 2/4;
     }
 
+    /* Agencement du texte d'information sous les filtres */
+
     .info{
         display: block;
         flex-wrap: wrap;
@@ -864,18 +901,26 @@ footer p:hover{
 
     }
 
+    /* Agencement de la section populaires */
+
     .populaires-cards{
         display: block;
     }
+
+    /* Apparence texte "Hébergements à Marseille */
 
     #hebergements span{
         font-weight: bold;
         font-size: 1.3em;
     }
 
+    /* Agencement de la section activités */
+
     .cartesactivites{
         display: block;
     }
+
+    /* Agencement et apparence des cartes activités */
 
     .carteactivite{
         margin: auto;
@@ -892,6 +937,8 @@ footer p:hover{
         margin-top: 0.6rem;
         flex-wrap: wrap;
     }
+
+    /* Agencement du footer */
 
     footer{
         display: block;
