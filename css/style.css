@@ -13,9 +13,172 @@
     color: var(--main-color);
 }
 
+.fa-location-dot{
+    color: #070707;
+}
+
 body {
     display: flex;
     justify-content: center;
+    padding: 2px;
+    margin-top: 11px;
+}
+
+/* Agencement barre de navigation */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+/* Taille et placement du Logo en haut de page */
+
+#logo{
+    margin-right: auto;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/* Espacement entre les liens de navigation */
+
+nav a {
+    padding: 2rem;
+}
+
+/* Changement de couleur et bordure au dessus du lien lors du survolement avec le curseur */
+
+nav a:hover{
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+}
+
+/* Agencement de la barre de recherche */
+
+.search .search-form{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+/* Agencement et apparence de l'icone map */
+
+.search .search-form i{
+    padding: 1rem;
+    background-color: lightgray;
+    border-radius: 20% 0% 0% 20%;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* Changement opacity surevolement map icon */
+
+.search .search-form i:hover{
+    opacity: 1;
+}
+
+/* Sizing de la barre de recherche et ajout d'une bordure */
+
+.search .search-form input{
+    padding-right: 2rem;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+/* Changement d'apparence du placeholder */
+
+.search .search-form input::placeholder{
+    font-weight: bold;
+    color: black;
+}
+
+/* Sizing et apparence du bouton "Rechercher" */
+
+.search .search-form button{
+    border: 1px solid #0065FC;
+    background-color: #0065FC;
+    color: white;
+    border-radius:0 1rem 1rem 0;
+    padding: 0 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+/* Changement opacity à 1 lors du survolement du bouton "Rechercher */
+
+.search .search-form button:hover{
+    opacity: 1;
+}
+
+/* Placement du div "Filtre" contenant les boutons de filtres et le texte "Filtres" */
+
+.filtres{
+    margin-bottom: 2rem;
+}
+
+/* Apparence et placement du texte "Filtres" */
+
+.filtres span{
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+/* Apparence et sizing des boutons de filtre */
+
+.filtres button{
+    padding: 0.7rem;
+    background-color: white;
+    border: 2px solid lightgray;
+    border-radius: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Changement de couleur des boutons de filtres au survolement du curseur */
+
+.filtres button:hover{
+    background-color: #DEEBFF;
+}
+
+/* Placemement des boutons de filtres */
+
+.filtres i{
+    margin-left: 0.2rem;
+    margin-right: 0.5rem;
+}
+
+/* Placement de la div info contenant l'icône "i" et le texte "logements disponibles" */
+
+.info{
+    margin-bottom: 1.5rem;
+}
+
+/* Création de la bordure ronde autour de l'icône "i" */
+
+.info i{ 
+    border: 1px solid lightgray;
+    border-radius: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.divinfotexte{
+    margin-left: 3%;
+    margin-top: -2%;
+}
+
+/* Placement du texte "Filtres" */
+
+.info span{
+    margin-left: 0.5rem;
 }
 
 .main-container {
@@ -23,6 +186,92 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+}
+
+/* Placement et sizing du texte "Hébergements à Marseille */
+
+#hebergements span{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Agencement des cartes */
+
+.cartes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Cartes hébergements */
+
+.carte{
+    background-color: white;
+    width: 13rem;
+    height: 9rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-right: 0.4rem;
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
+    text-align: center;
+    padding-bottom: 4rem;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+} 
+
+/* Apparence et agencement image carte */
+
+.carte img{
+    height: 8rem;
+    max-width: 95%;
+    min-width: 97%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0rem 0rem;
+    margin-top: 0.3rem;
+}
+
+/* Apparence et agencement titre de la carte */
+
+.carte .titrecarte h3{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: start;
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+}
+
+/* Apparence et agencement sous titre de la carte */
+
+.carte .soustitrecarte{
+    text-align: start;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    margin-top: -0.7rem;
+}
+
+.soustitreeuro {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Étoiles hébergements */
+
+.cartes .carte .card-rating {
+    text-align: start;
+    margin-top: -0.7rem;
+    margin-left: 1rem;
+}
+
+/* Apparence et agencement du texte "Afficher plus" */
+
+.afficherplus{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.afficherplusdiv{
+    margin-top: 2.2rem;
 }
 
 a {
@@ -34,6 +283,8 @@ a {
     margin: 0;
     font-size: 22px;
 }
+
+/* Apparence carte populaires*/
 
 .card {
     background-color: white;
@@ -58,6 +309,9 @@ a {
     color: var(--main-bg-color)
 }
 
+/* Section hébergements sizing */
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -68,15 +322,63 @@ a {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
+    margin-top: 30px;
     box-sizing: border-box;
 }
 
+
 /****** Hebergements ***********/
-.hebergements {
+#hebergements {
     width: 65%;
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.hebergements-cartes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hebergements-cartes a{
+    width: 30%;
+    min-width: 120px;
+    background-color: #ffffff;
+    padding: 5px;
+    margin-top: 33px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #dadada;
+}
+.hebergements-cartes img{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    border: 5px;
+}
+.titrecarte h3{
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+.soustitrecarte{
+    margin: 0;
+}
+.card-rating{
+    margin-bottom: 5px;
+}
+.contenu-carte{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+    gap: 8px;
+}
+.afficher-plus{
+    font-size: 17px;
+    margin-top: 33px;
 }
 
-/****** Populaires ***********/
+
+/****** Section populaires agencemennt ***********/
 .populaires {
     width: 32%;
 }
@@ -121,9 +423,95 @@ a {
     margin-bottom: 5px;
 }
 
+/* Titre "Activités à Marseille */
+
+.h3activites{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Placement et agencement de la div cartesactivites */
+
+.cartesactivites{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    
+}
+
+/* Placement et agencement du titre de la carte */
+
+.carteactivite .titrecarte h3{
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: start;
+    margin-left: 1rem;
+    margin-top: 0.7rem;
+    flex-wrap: wrap;
+}
+
+/* Placement et agencement de l'image de la carte */
+
+.carteactivite img{
+    height: 7rem;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+/* Cartes activités */
+
+.carteactivite{
+    background-color: white;
+    width: 17rem;
+    height: 23rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    margin-right: 1rem;
+} 
+
+/* Footer */
+
+footer{
+    background-color: #F2F2F2;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > *{
+    flex-basis: 20%;
+    margin-left: 1rem;
+}
+
+footer p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.fa-sharp.fa-solid.fa-magnifying-glass{
+    display: none;
+}
 
 
-
+.carteactivite .grandtitrecarte h3{
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: start;
+    margin-left: 1rem;
+    margin-top: 0.6rem;
+    flex-wrap: wrap;
+}
+    
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -133,14 +521,23 @@ a {
         flex-direction: column;
     }
 
-    .hebergements {
-        width: 100%;
+    /* Changement couleur logo "Location Dot" */
+    .fa-location-dot{
+        color: #070707;
     }
 
+    /* Sizing sections */
+
+    #hebergements {
+        width: 100%;
+    }
+    
     .populaires {
         width: 100%;
         margin-top: 50px;
     }
+
+    /* Agencement des cartes */
 
     .populaires-cards {
         display: flex;
@@ -159,9 +556,403 @@ a {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .carte{
+        background-color: red;
+    }
+
+    .cartes{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* Agencement et apparence des filtres */
+
+    .filtres{
+        display: flex;
+        width: 1000px;
+    }
+
+    .filtres button{
+        display: flex;
+        margin-top: 3rem;
+        margin-right: 6rem;
+        margin-left: -4rem;
+        background-color: white;
+        border: 2px solid lightgray;
+        border-radius: 1.5rem;
+        font-weight: bold;
+        width: 140px;
+        height: 50px;
+        padding-top: 0.8rem;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .filtres i{
+        margin-left: 0.2rem;
+        margin-right: 0.5rem;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+
+    /* Agencement et apparence des cartes Activités */
+
+    .cartesactivites{
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .carteactivite{
+        width: 170px;
+        height: 200px;
+    }
+
+    .carteactivite .titrecarte h3{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carteactivite .grandtitrecarte h3{
+        font-size: 0.9rem;
+        font-weight: bold;
+        text-align: start;
+        margin-left: 1rem;
+        margin-top: 0.3rem;
+        flex-wrap: wrap;
+    }
+
+    /* Apparence texte "Hébergements à Marseille */
+
+    #hebergements span{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    
+}
+
+.fa-sharp.fa-solid.fa-magnifying-glass{
+    display: none;
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    /* Agencement des sections */
+
+    .main-container {
+        padding: 0;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: unset;
+        margin-top: 15px;
+    }
+
+    #hebergements{
+        background-color: #ffffff;
+        width: 100%;
+        padding-bottom: 0px; 
+    }
+
+    /* Agencement des cartes hébergements */
+
+    .hebergements-cartes{
+        flex-direction: column;
+    }
+    .hebergements-cartes a {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+
+    /* Taille et placement du Logo en haut de page */
+
+    #logo{
+        margin: auto;
+        max-width: 100px;
+        max-height: 100px;
+        display: flex;
+        margin-bottom: 2rem;
+    }
+
+    /* Agencement barre de navigation */
+
+    nav{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    
+    /* Agencement section populaires */
+
+    .populaires{
+        height: 9.5%;
+        margin-right: 30rem;
+        margin-left: -3%;
+        width: 106%;
+    }
+
+    /* Apparence logo "Location Dot" */
+
+    .fa-location-dot{
+        color: #070707;
+    }
+
+    /* Agencement barre de navigation */
+
+    nav .sub-nav{
+        width: 100%;
+        display: flex;
+    }
+
+    nav .sub-nav a{
+        width: 100%;
+        text-align: center;
+        border-bottom: 3px solid lightgray;
+    }
+
+    /* Espacement entre les liens de navigation */
+
+    nav a {
+        padding-right: 2rem;
+        padding-bottom: 10px;
+    }
+
+    /* Changement de couleur et bordure au dessus du lien lors du survolement avec le curseur */
+
+    nav a:hover{
+        border-bottom: 3px solid #0065FC;
+        border-top: 0px;
+        color: #0065FC;
+    }
+
+    /* Agencement du P et du H2 sous le logo Booki */
+
+    #h2header{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    #pheader{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    
+    /* Agencement et apparence de l'icone map */
+    
+    .search .search-form button{
+        border: 1px solid #0065FC;
+        background-color: #0065FC;
+        color: white;
+        border-radius:1rem 1rem 1rem 1rem;
+        padding: 0 0;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        opacity: 0.9;
+        margin-left: -10%;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.4));
+    }
+    
+    /* Changement opacity à 1 lors du survolement du bouton "Rechercher */
+    
+    .search .search-form button:hover{
+        opacity: 1;
+    }
+
+    /* Retirer le bouton rechercher de la version Desktop */
+
+    #spanrechercher{
+        display: none;
+    }
+
+    /* Apparence du logo rechercher */
+
+    .fa-magnifying-glass{
+        color: white;
+    }
+
+    .fa-sharp.fa-solid.fa-magnifying-glass{
+        background-color: transparent;
+        display: flex;
+    }
+
+    /* Agencement de la barre de recherche */
+
+    .search .search-form{
+        display: flex;
+        margin-bottom: 40px;
+        margin-left: 3%;
+    }
+
+    .search{
+        justify-content: center;
+    }
+
+    form{
+        justify-content: center;
+    }
+    .search .search-form{
+        display: flex;
+    }
+
+    input{
+        padding-left: 7rem;
+        margin-right: 6%;
+    }
+
+    .search .search-form input::placeholder{
+        font-weight: bold;
+        color: black;
+        justify-content: flex-start;
+    }
+
+    .search .search-form input{
+        padding-right: 45%;
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        padding-left: 0%;
+    }
+ 
+    /* Agencement et apparence du texte "Filtres" */
+
+    .filtres span{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-left: 30%;
+        margin-top: -1%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    /* Agencement des boutons filtres */
+
+    .filtres{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 60px);
+        justify-content: center;
+        align-items: start;
+        flex-wrap: wrap;
+    }
+
+    .filtres button{
+        min-width: 150px;
+        max-width: 300px;
+    }
+
+    #btneco{
+        margin-left: 25%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #btnfamilial{
+        margin-left: 1%;
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+
+    #btnromantique{
+        margin-left: 13%;
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    #btnpepites{
+        margin-left: 1%;
+        grid-column: 2/3;
+        grid-row: 2/4;
+    }
+
+    /* Agencement du texte d'information sous les filtres */
+
+    .info{
+        display: block;
+        flex-wrap: wrap;
+        margin-left: 3%;
+    }
+
+    .info span{
+        display: block;
+        width: 400px;
+        flex-wrap: wrap;
+        margin-left: 40px;
+        margin-top: -35px;
+
+    }
+
+    /* Agencement de la section populaires */
+
+    .populaires-cards{
+        display: block;
+    }
+
+    /* Apparence texte "Hébergements à Marseille */
+
+    #hebergements span{
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+
+    /* Agencement de la section activités */
+
+    .cartesactivites{
+        display: block;
+    }
+
+    /* Agencement et apparence des cartes activités */
+
+    .carteactivite{
+        margin: auto;
+        margin-top: 3%;
+        width: 400px;
+        height: 200px;
+    }
+
+    .carteactivite .grandtitrecarte h3{
+        font-size: 0.9rem;
+        font-weight: bold;
+        text-align: start;
+        margin-left: 1rem;
+        margin-top: 0.6rem;
+        flex-wrap: wrap;
+    }
+
+    /* Agencement du footer */
+
+    footer{
+        display: block;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        background-color: var(--main-bg-color);
+        width: 106%;
+        margin-right: 30rem;
+        margin-left: -3%;
+        margin-bottom: auto;
+        height: 9.5%;
+    }
+
+    footer div{
+        margin-left: 8%;
+    }
 }
