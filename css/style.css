@@ -439,7 +439,21 @@ a {
     display: flex;
     justify-content: space-between;
     margin-bottom: 3rem;
+    gap: 1rem;
     
+}
+
+.cartesactivites a{
+    width: 25%;
+}
+
+.carteactivite .grandtitrecarte h3{
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: start;
+    margin-left: 1rem;
+    margin-top: 0.6rem;
+    flex-wrap: wrap;
 }
 
 /* Placement et agencement du titre de la carte */
@@ -469,7 +483,6 @@ a {
 
 .carteactivite{
     background-color: white;
-    width: 17rem;
     height: 23rem;
     border-radius: 1rem;
     margin-top: 2rem;
@@ -503,14 +516,7 @@ footer p:hover{
 }
 
 
-.carteactivite .grandtitrecarte h3{
-    font-size: 0.9rem;
-    font-weight: bold;
-    text-align: start;
-    margin-left: 1rem;
-    margin-top: 0.6rem;
-    flex-wrap: wrap;
-}
+
     
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
